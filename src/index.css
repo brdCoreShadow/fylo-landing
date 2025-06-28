@@ -54,6 +54,7 @@ p {
 }
 a {
   text-decoration: none;
+  font-family: "Raleway";
 }
 input {
   box-sizing: border-box;
