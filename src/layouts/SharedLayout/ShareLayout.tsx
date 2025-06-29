@@ -1,8 +1,9 @@
 import * as SC from "./SharedLayoutStyled";
 
-import About from "../../comonents/About/About";
-import Hero from "../../comonents/Hero/Hero";
-import StayProductive from "../../comonents/StayProductive/StayProductive";
+import About from "../../components/About/About";
+import Hero from "../../components/Hero/Hero";
+import StayProductive from "../../components/StayProductive/StayProductive";
+import Feedback from "@/components/Feedback/Feedback";
 
 
 const SharedLayout: React.FC = () => {
@@ -11,6 +12,7 @@ const SharedLayout: React.FC = () => {
       <Hero />
       <About/>
       <StayProductive/>
+      <Feedback/>
     </SC.SharedLayoutCon>
   );
 };
