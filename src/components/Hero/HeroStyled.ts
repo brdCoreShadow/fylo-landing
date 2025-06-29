@@ -4,6 +4,15 @@ export const HeroCon = styled.div`
   padding-bottom: 120px;
 
   text-align: center;
+
+  @media (min-width: 1280px){
+    width: 50%;
+
+    padding-bottom: 160px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const HeroThumb = styled.div`
@@ -15,6 +24,13 @@ export const HeroThumb = styled.div`
   margin-right: auto;
 
   overflow: hidden;
+
+  @media (min-width: 1280px){
+    width: 600px;
+    height: 500px;
+
+    margin-bottom: 36px;
+  }
 `;
 
 export const HeroContentCon = styled.div`
@@ -29,11 +45,21 @@ export const HeroContentCon = styled.div`
 
     font-size: 24px;
     line-height: 1.5;
+
+    @media (min-width: 1280px){
+      margin-bottom: 32px;
+
+      font-size: 40px;
+    }
   }
 
   & > p {
     font-size: 14px;
     line-height: 1.5;
+
+    @media (min-width: 1280px){
+      font-size: 20px;
+    }
   }
 `;
 
@@ -44,9 +70,16 @@ export const HeroBtn = styled.button`
   padding-bottom: 16px;
 
   font-size: 14px;
+  font-weight: 700;
 
   color: #fff;
   background: linear-gradient(to right, #63e1d9 0%, #34a0cd 100%);
 
   border-radius: 24px;
+
+  @media (min-width: 1280px){
+    width: 280px;
+
+    font-size: 16px;
+  }
 `;

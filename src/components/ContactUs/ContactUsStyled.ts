@@ -9,6 +9,24 @@ export const ContactUsCon = styled.div`
   padding-right: 28px;
 
   background-color: #1b2330;
+
+  @media (min-width: 1280px) {
+    width: 60%;
+
+    transform: translate(0, 50%);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 0;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 76px;
+    padding-right: 76px;
+
+    border-radius: 12px;
+  }
 `;
 
 export const ContactUsContentCon = styled.div`
@@ -18,11 +36,21 @@ export const ContactUsContentCon = styled.div`
 
   color: #fff;
 
+  @media (max-width: 1280px) {
+    margin-bottom: 38px;
+  }
+
   & > h3 {
     margin-bottom: 16px;
 
     font-size: 18px;
     line-height: 1.3;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 0;
+
+      font-size: 32px;
+    }
   }
 
   & > p {
@@ -33,6 +61,13 @@ export const ContactUsContentCon = styled.div`
 
 export const ContactUsForm = styled.form`
   width: 100%;
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   & > input {
     width: inherit;
@@ -45,11 +80,26 @@ export const ContactUsForm = styled.form`
 
     font-size: 10px;
 
-    color: #c0c0c0;
-
     background-color: #fff;
 
     border-radius: 24px;
+
+    &::placeholder {
+      color: #c0c0c0;
+    }
+
+    @media (min-width: 1280px) {
+      width: 55%;
+
+      margin-bottom: 0;
+
+      padding-top: 16px;
+      padding-left: 36px;
+
+      font-size: 12px;
+
+      color: #07043b;
+    }
   }
 
   & > button {
@@ -65,5 +115,24 @@ export const ContactUsForm = styled.form`
     background: linear-gradient(to right, #63e1d9 0%, #34a0cd 100%);
 
     border-radius: 24px;
+
+    @media (min-width: 1280px) {
+      width: auto;
+
+      padding-left: 28px;
+      padding-right: 28px;
+
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.7;
+
+        cursor: pointer;
+
+        transition: all 0.3s;
+      }
+    }
   }
 `;

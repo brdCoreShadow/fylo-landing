@@ -5,8 +5,26 @@ export const ContactsList = styled.ul`
 
   color: #fff;
 
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 0;
+
+    font-size: 16px;
+
+    & p {
+      width: 340px;
+    }
+  }
+
   & > li:not(:last-of-type) {
     margin-bottom: 16px;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
   }
 
   & li {
@@ -33,13 +51,27 @@ export const ContactsList = styled.ul`
       background-repeat: no-repeat;
     }
 
-    &:nth-of-type(2)::before {
+   
+  }
+
+  & a {
+    position: relative;
+
+    display: block;
+
+    color: #fff;
+
+     &:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
+
+    &:nth-of-type(1)::before {
       position: absolute;
 
       top: 0;
       left: 0;
 
-      transform: translate(0, 4px);
+      transform: translate(-32px, 4px);
 
       content: "";
 
@@ -53,13 +85,13 @@ export const ContactsList = styled.ul`
       background-repeat: no-repeat;
     }
 
-    &:nth-of-type(3)::before {
+     &:nth-of-type(2)::before {
       position: absolute;
 
       top: 0;
       left: 0;
 
-      transform: translate(0, 4px);
+      transform: translate(-32px, 4px);
 
       content: "";
 
@@ -72,9 +104,13 @@ export const ContactsList = styled.ul`
 
       background-repeat: no-repeat;
     }
-  }
 
-  & a {
-    color: #fff;
+    @media (min-width: 1280px) {
+      display: block;
+
+      font-size: 16px;
+
+     
+    }
   }
 `;

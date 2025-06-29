@@ -1,4 +1,4 @@
-import * as SC from "./FooterStyled"
+import * as SC from "./FooterStyled";
 
 import logoIcon from "../../assets/images/logo.svg";
 import Contacts from "@/components/Contacts/Contacts";
@@ -11,9 +11,11 @@ const Footer: React.FC = () => {
       <SC.FooterLogoThumb>
         <img src={logoIcon} alt="logo" />
       </SC.FooterLogoThumb>
-     <Contacts/>
-     <NavCom/>
-     <SocNet/>
+      <SC.FooterFlexCon>
+        <Contacts />
+        <NavCom />
+        <SocNet />
+      </SC.FooterFlexCon>
     </SC.FooterCon>
   );
 };

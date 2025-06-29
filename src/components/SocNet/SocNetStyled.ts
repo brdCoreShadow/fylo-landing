@@ -9,4 +9,12 @@ justify-content: center;
 & > li:not(:last-of-type){
     margin-right: 12px;
 }
+
+& img{
+    &:hover, &:focus, &:active{
+        fill:#62E0D9;
+
+        cursor: pointer;
+    }
+}
 `

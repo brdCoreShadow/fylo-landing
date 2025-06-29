@@ -11,10 +11,9 @@ const Contacts: React.FC = () => {
       </li>
       <li>
         <a href="tel:+15431234567">+1-543-123-4567</a>
+         <a href="email:example@fylo.com">example@fylo.com</a>
       </li>
-      <li>
-        <a href="email:example@fylo.com">example@fylo.com</a>
-      </li>
+      
     </SC.ContactsList>
   );
 };
